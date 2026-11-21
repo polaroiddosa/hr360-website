@@ -256,11 +256,11 @@ html:not(.js) .nav .btn{width:auto;margin-top:0}
 
 /* ---------- portrait ---------- */
 .portrait{position:relative;width:min(100%,360px);aspect-ratio:1;flex:none}
-.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 22%;border-radius:50%;filter:sepia(.14) saturate(.9) contrast(.98)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 14%;border-radius:50%}
 .portrait::after{content:"";position:absolute;right:0;top:50%;width:13%;aspect-ratio:1;border-radius:50%;background:var(--cobalt);transform:translate(50%,-50%);box-shadow:0 0 0 5px var(--cream)}
 .on-cobalt .portrait::after{background:var(--cream);box-shadow:0 0 0 5px var(--cobalt)}
 .founder{display:grid;gap:clamp(28px,5vw,64px);align-items:center}
-@media(min-width:800px){.founder{grid-template-columns:auto minmax(0,1fr)}}
+@media(min-width:800px){.founder{grid-template-columns:360px minmax(0,1fr)}}
 .founder .portrait{margin-right:3%}
 @media(max-width:799px){.founder .portrait{width:min(90%,360px)}}
 .founder__name{font-family:var(--font-display);font-weight:300;letter-spacing:-.02em;line-height:1.05;font-size:clamp(2.25rem,1rem + 4.4vw,4.5rem)}
